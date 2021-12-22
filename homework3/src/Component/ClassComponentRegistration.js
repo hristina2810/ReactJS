@@ -5,14 +5,13 @@ export class ClassComponentRegistration extends React.Component () {
         constructor(props){
             super(props)
             console.log('Constructor');
-              this.state = {firstName: "" },
-              this.state = {lastName:""},
-              this.state = {country:""},
-              this.state = {username:""},
-              this.state = {password:""},
-              this.state = {email:""}
-        
-        }
+              this.state = {firstName: "" };
+              this.state = {lastName:""};
+              this.state = {country:""};
+              this.state = {username:""};
+              this.state = {password:""};
+              this.state = {email:""};
+        };
        UserReg = (event) => {
             this.setState({ [event.target.name] : event.target.value });
         };
